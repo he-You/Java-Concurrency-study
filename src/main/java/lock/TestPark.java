@@ -1,5 +1,6 @@
 package lock;
 
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.LockSupport;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -36,6 +37,5 @@ public class TestPark {
         //park()方法是由UNSAFE提供,LockSupport只是对该方法进行了封装
         LockSupport.park();
         System.out.println("t1----2");
-
     }
 }
